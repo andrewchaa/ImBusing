@@ -41,14 +41,13 @@
         };
 
         self.markers = ko.observableArray();
-
         self.findNearbyStops = function() {
             navigator.geolocation.getCurrentPosition(function (location) {
                 var latitude = location.coords.latitude;
                 var longitude = location.coords.longitude;
 
                 $.get('/api/bustops/latitude/' + latitude + '/longitude/' + longitude, function(result) {
-                    console.log(result.markers);
+                    self.markers.removeAll();
                     self.markers(result.markers);
                 });
 

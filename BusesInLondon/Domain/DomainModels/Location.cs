@@ -13,10 +13,13 @@ namespace ImBusing.Domain.DomainModels
 
         public Location(decimal latitude, decimal longitude)
         {
-            SwLat = latitude - 0.01m;
-            SwLng = longitude - 0.01m;
-            NeLat = latitude + 0.01m;
-            NeLng = longitude + 0.01m;
+            decimal delta = 0.005m;
+//            decimal delta = 0.01m;
+
+            SwLat = latitude - delta;
+            SwLng = longitude - delta;
+            NeLat = latitude + delta;
+            NeLng = longitude + delta;
         }
 
         public LocationModel GetMarkers(ICountDownService countDownService)
