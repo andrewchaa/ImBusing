@@ -1,7 +1,7 @@
-﻿using BusesInLondon.Domain.ReadModels;
-using BusesInLondon.Domain.Services;
+﻿using ImBusing.Domain.ReadModels;
+using ImBusing.Domain.Services;
 
-namespace BusesInLondon.Domain.DomainModels
+namespace ImBusing.Domain.DomainModels
 {
     public class Bustop
     {

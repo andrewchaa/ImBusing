@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace BusesInLondon.Domain.ReadModels
+namespace ImBusing.Domain.ReadModels
 {
     public class BustopModel
     {

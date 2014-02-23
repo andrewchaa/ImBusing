@@ -1,4 +1,4 @@
-﻿namespace BusesInLondon.Domain.ReadModels
+﻿namespace ImBusing.Domain.ReadModels
 {
     public class ArrivalModel
     {

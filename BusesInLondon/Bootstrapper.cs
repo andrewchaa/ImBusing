@@ -1,14 +1,12 @@
-﻿using BusesInLondon.Domain.Services;
+﻿using ImBusing.Domain.Services;
 using Nancy.Bootstrapper;
 using Nancy.Bootstrappers.Ninject;
 using Nancy.Conventions;
-using Nancy.TinyIoc;
 using Ninject;
+using Nancy;
 
-namespace BusesInLondon
+namespace ImBusing
 {
-    using Nancy;
-
     public class Bootstrapper : NinjectNancyBootstrapper
     {
 
@@ -29,7 +27,7 @@ namespace BusesInLondon
         protected override void ConfigureRequestContainer(IKernel container, NancyContext context)
         {
             // Perform registrations that should have a request lifetime
-            base.ConfigureRequestContainer(container, context);
+
         }
 
         protected override void RequestStartup(IKernel container, IPipelines pipelines, NancyContext context)
