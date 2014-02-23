@@ -105,7 +105,6 @@
     <Content Include="Views\index.cshtml" />
     <Content Include="Scripts\jquery-2.1.0.min.map" />
     <Content Include="Views\_Layout.cshtml" />
-    <Content Include="Views\bustop.cshtml" />
     <Content Include="Views\stopcode.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
