@@ -1,0 +1,42 @@
+﻿@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<object>
+
+@{ Layout = "_Layout.cshtml"; }   
+
+        
+<div class="exploreSiteFullPane">
+				
+	<a href="/" class="explorePane active">
+		<span class="i-pane i-blue"><i class="i-home"></i></span>
+		<h4>Home</h4>
+	</a>
+	<a href="/nearbystops" class="explorePane middle">
+		<span class="i-pane i-blue">
+			<i class="i-about"></i>
+		</span>
+		<h4>Bustops near</h4>
+	</a>
+	<a href="/stophere" class="explorePane">
+		<span class="i-pane i-blue">
+			<i class="i-blog"></i>
+		</span>
+		<h4>This bustop</h4>
+	</a>
+	<a href="/stopcode" class="explorePane">
+		<span class="i-pane i-blue">
+			<i class="i-gallery"></i>
+		</span>
+		<h4>By stop code</h4>
+	</a>
+	<a href="/about" class="explorePane middle">
+		<span class="i-pane i-blue">
+			<i class="i-about"></i>
+		</span>
+		<h4>About</h4>
+	</a>
+	<a href="contact.html" class="explorePane">
+		<span class="i-pane i-blue">
+			<i class="i-contact"></i>
+		</span>
+		<h4>Contact</h4>
+	</a>
+</div>

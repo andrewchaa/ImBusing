@@ -76,8 +76,57 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\css\flexslider.css" />
+    <Content Include="Content\css\font-awesome.min.css" />
+    <Content Include="Content\css\fonts\flexslider-icon.svg" />
+    <Content Include="Content\css\fonts\icons.svg" />
+    <Content Include="Content\css\fonts\phoneicon.svg" />
+    <Content Include="Content\css\foundation.css" />
+    <Content Include="Content\css\jquery.mmenu.all.css" />
+    <Content Include="Content\css\jquery.mobile-1.0rc2.min.css" />
+    <Content Include="Content\css\photoswipe\photoswipe-icons%402x.png" />
+    <Content Include="Content\css\photoswipe\photoswipe-icons.png" />
+    <Content Include="Content\css\photoswipe\photoswipe-loader.gif" />
+    <Content Include="Content\css\photoswipe\photoswipe.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\favicon.ico" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\img\blog\1.jpg" />
+    <Content Include="Content\img\favicon.ico" />
+    <Content Include="Content\img\gallery\1-th.jpg" />
+    <Content Include="Content\img\gallery\1.jpg" />
+    <Content Include="Content\img\icons.png" />
+    <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\logo.svg" />
+    <Content Include="Content\img\team\1-th.jpg" />
+    <Content Include="Content\img\team\1.jpg" />
+    <Content Include="Content\js\gmap3.min.js" />
+    <Content Include="Content\js\jquery.easy-pie-chart.js" />
+    <Content Include="Content\js\jquery.flexslider-min.js" />
+    <Content Include="Content\js\jquery.flexslider.js" />
+    <Content Include="Content\js\jquery.min.js" />
+    <Content Include="Content\js\jquery.mmenu.js" />
+    <Content Include="Content\js\jquery.mmenu.min.all.js" />
+    <Content Include="Content\js\jquery.mmenu.min.js" />
+    <Content Include="Content\js\jquery.mobile-1.0rc2.min.js" />
+    <Content Include="Content\js\o-script.js" />
+    <Content Include="Content\js\photoswipe\code-photoswipe-1.0.11.min.js" />
+    <Content Include="Content\js\photoswipe\code.photoswipe.jquery-3.0.4.min.js" />
+    <Content Include="Content\js\photoswipe\klass.min.js" />
+    <Content Include="Content\js\photoswipe\psw.call.js" />
+    <Content Include="Content\js\photoswipe\simple-inheritance.min.js" />
     <Content Include="Content\nancy-logo.png" />
+    <Content Include="Content\css\fonts\flexslider-icon.eot" />
+    <Content Include="Content\css\fonts\flexslider-icon.ttf" />
+    <Content Include="Content\css\fonts\flexslider-icon.woff" />
+    <Content Include="Content\img\blog\Thumbs.db" />
+    <Content Include="Content\img\gallery\Thumbs.db" />
+    <Content Include="Content\img\team\Thumbs.db" />
+    <Content Include="Content\img\Thumbs.db" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-2.1.0.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.0.js" />
     <Content Include="Scripts\jquery-2.1.0.min.js" />
@@ -106,6 +155,7 @@
     <Content Include="Scripts\jquery-2.1.0.min.map" />
     <Content Include="Views\_Layout.cshtml" />
     <Content Include="Views\stopcode.cshtml" />
+    <Content Include="Views\nearbystops.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,0 +1,58 @@
+@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<dynamic>
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+		<title>London Bus</title>
+		<link href="/Content/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+		<link type="text/css" rel="stylesheet" href="../Content/css/jquery.mmenu.all.css" />
+		<link type="text/css" rel="stylesheet" href="../Content/css/style.css" />
+
+		<script type="text/javascript" src="/Content/js/jquery.min.js"></script>
+		<script type="text/javascript" src="/Content/js/jquery.mmenu.min.all.js"></script>
+		<script type="text/javascript" src="/Content/js/jquery.flexslider.js"></script>
+		<script type="text/javascript" src="/Content/js/o-script.js"></script>
+        
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+        <script src="@Url.Content("../Scripts/knockout-3.0.0.js")"></script>
+
+@*		<style>*@
+@*            html {overflow: -moz-scrollbars-vertical; overflow-y: scroll;}*@
+@*        </style>*@
+
+	</head>
+	<body class="o-page">
+		<div id="page">
+			<!-- Header -->
+			<div id="header">
+				<a href="#menu"></a>
+				<span id="Logo" class="svg"><img src="/Content/img/logo.svg" /></span>
+				<a class="backBtn" href="javascript:history.back();"></a>
+			</div>
+			<div class="subHeader"><i class="i-home i-small"></i>London Bus</div>
+			
+            @RenderBody()
+		
+			
+			<!-- Menu navigation -->
+			<nav id="menu">
+				<ul>
+					<li class="Selected"><a href="/"><i class="i-home i-small"></i>Home</a></li>
+					<li><a href="/nearbystops"><i class="i-about i-small"></i>Bustops near</a></li>
+@*					<li><a href="gallery.html"><i class="i-gallery i-small"></i>Gallery</a></li>*@
+@*				    <li><a href="shortcodes.html"><i class="i-shortcodes i-small"></i>Shortcodes</a></li>*@
+@*                    <li><a href="/contact.html"><i class="i-contact i-small"></i>Contact</a></li>*@
+				</ul>
+			</nav>
+		</div>
+	</body>
+</html>

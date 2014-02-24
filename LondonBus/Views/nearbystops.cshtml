@@ -1,0 +1,83 @@
+﻿@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<object>
+
+@{ Layout = "_Layout.cshtml"; }   
+
+<style>
+    .mainIconPanePhone {
+        margin-bottom: 15px;
+    }
+</style>
+<link href="../Content/bootstrap.min.css" rel="stylesheet" />
+<link href="../Content/css/font-awesome.min.css" rel="stylesheet" />
+
+
+<!-- Content -->
+<div id="content">
+	<div class="mainIconPanePhone">
+		<span class="i-pane i-green"><i class="i-phone"></i></span>
+		<h4>Bustops near me</h4>
+	    
+        <p><button class="btn btn-primary" data-bind="click: findNearbyStops">Find</button></p>
+	</div>
+				
+</div>
+
+        
+<div>&nbsp;</div>
+<div></div>
+
+<div>&nbsp;</div>
+
+<!-- ko if: markers().length > 0 -->
+<table class="table table-condensed table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Buses</th>
+            <th>Towards</th>
+        </tr>
+    </thead>
+    <tbody data-bind="foreach: markers">
+        <tr>
+            <td><a data-bind="text: name, attr: { href: '/stopcode/' + id }"></a></td>
+            <td data-bind="text: routesString"></td>
+            <td data-bind="text: towards"></td>
+        </tr>
+    </tbody>
+</table>
+<!-- /ko -->
+
+<script type="text/javascript">
+    var BusModel = function() {
+        var self = this;
+
+        self.location = {
+            latitude: 0.0,
+            longitude: 0.0
+        };
+
+        self.markers = ko.observableArray();
+        self.findNearbyStops = function () {
+            if ("geolocation" in navigator) {
+                navigator.geolocation.getCurrentPosition(function (location) {
+                    var latitude = location.coords.latitude;
+                    var longitude = location.coords.longitude;
+
+                    $.get('/api/bustops/latitude/' + latitude + '/longitude/' + longitude, function (result) {
+                        self.markers.removeAll();
+                        self.markers(result.markers);
+                    });
+
+                });
+            }
+        };
+
+    };
+
+    $(function () {
+        var viewModel = new BusModel();
+        ko.applyBindings(viewModel);
+    });
+    
+    
+</script>
