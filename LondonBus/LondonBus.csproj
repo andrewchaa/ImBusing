@@ -119,9 +119,6 @@
     <Content Include="Content\css\fonts\flexslider-icon.eot" />
     <Content Include="Content\css\fonts\flexslider-icon.ttf" />
     <Content Include="Content\css\fonts\flexslider-icon.woff" />
-    <Content Include="Content\img\blog\Thumbs.db" />
-    <Content Include="Content\img\gallery\Thumbs.db" />
-    <Content Include="Content\img\team\Thumbs.db" />
     <Content Include="Content\fonts\fontawesome-webfont.eot" />
     <Content Include="Content\fonts\fontawesome-webfont.ttf" />
     <Content Include="Content\fonts\fontawesome-webfont.woff" />
