@@ -9,7 +9,7 @@ namespace ImBusing.Modules
         public IndexModule(ICountDownService countDownService)
         {
             Get["/"] = parameters => View["index"];
-            Get["/stopcode"] = _ => View["stopcode"];
+            Get["/stopcode/{stopcode}"] = _ => View["stopcode", _.stopcode];
         }
     }
 }

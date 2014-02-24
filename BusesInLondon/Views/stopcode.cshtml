@@ -1,4 +1,4 @@
-﻿@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<object>
+﻿@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<dynamic>
 
 @{
   Layout = "_Layout.cshtml";
@@ -10,7 +10,7 @@
     <div class="form-group">
         <label class="sr-only" for="bustopcode"></label>
         <input class="form-control" type="text" name="bustopcode" id="bustopcode" data-bind="value: stopCode"
-               placeholder="bustop code" style="width: 200px;" />
+               placeholder="bustop code" style="width: 120px;" />
     </div>
     <button class="btn btn-primary" type="submit" data-bind="click: find">Find bus times</button>
 </form>
@@ -55,6 +55,15 @@
     $(function () {
         var viewModel = new BusModel();
         ko.applyBindings(viewModel);
+
+        var stopCode = '@Model';
+        if (!!stopCode) {
+            console.log(stopCode);
+            viewModel.stopCode(stopCode);
+            viewModel.find();
+        }
+            
+
     });
     
     
