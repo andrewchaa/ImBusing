@@ -6,6 +6,6 @@ namespace ImBusing.Domain.Services
     public interface ICountDownService
     {
         BustopModel GetBustopDetails(int bustopCode);
-        LocationModel GetBustops(decimal swLat, decimal swLng, decimal neLat, decimal neLng);
+        LocationModel GetMarkers(decimal swLat, decimal swLng, decimal neLat, decimal neLng);
     }
 }

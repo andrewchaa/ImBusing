@@ -23,7 +23,7 @@ namespace ImBusing.Domain.Services
             return JsonSerializer.DeserializeFromString<BustopModel>(contents);
         }
 
-        public LocationModel GetBustops(decimal swLat, decimal swLng, decimal neLat, decimal neLng)
+        public LocationModel GetMarkers(decimal swLat, decimal swLng, decimal neLat, decimal neLng)
         {
             string api = string.Format("{0}/markers/swLat/{1}/swLng/{2}/neLat/{3}/neLng/{4}/",
                 CountDownRoot, swLat, swLng, neLat, neLng);

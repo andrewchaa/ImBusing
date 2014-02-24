@@ -7,11 +7,13 @@ namespace ImBusing.Domain.ReadModels
     {
         public string Direction { get; set; }
         public string Id { get; set; }
-        public double Lat { get; set; }
-        public double Lng { get; set; }
+        public decimal Lat { get; set; }
+        public decimal Lng { get; set; }
         public string Name { get; set; }
         public string Towards { get; set; }
         public IEnumerable<BusRoute> Routes { get; set; }
+
+        public decimal Delta { get; set; }
 
         public string RoutesString
         {
